@@ -1,7 +1,7 @@
-CXX        := g++
-CXXFLAGS   := -pedantic -std=c++11 -Wall -I /opt/local/include
-LDFLAGS    := -lgtest -lgtest_main -pthread -L /opt/local/lib
-GCOV       := gcov
+CXX        := g++-4.8
+CXXFLAGS   := -pedantic -std=c++11 -Wall
+LDFLAGS    := -lgtest -lgtest_main -pthread
+GCOV       := gcov-4.8
 GCOVFLAGS  := -fprofile-arcs -ftest-coverage
 GPROF      := gprof
 GPROFFLAGS := -pg
@@ -25,7 +25,6 @@ scrub:
 	rm -rf collatz-tests
 	rm -rf html
 	rm -rf latex
-	rm -rf TestCollatz.dSYM
 
 status:
 	make clean
