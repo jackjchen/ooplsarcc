@@ -39,6 +39,8 @@ status:
 	git remote -v
 	git status
 
+test-run: RunCollatz.tmp
+
 test: RunCollatz.tmp TestCollatz.tmp
 
 docs:
